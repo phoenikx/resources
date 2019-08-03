@@ -7,8 +7,7 @@ It manages 2 tables with the following data:
 
 Title | URL | Tags
 --- | --- | --- 
-Pagination in SQL | http://allyouneedisbackend.com/blog/2017/09/24/the-sql-i-love-part-1-scanning-large-table
- | pagination, sql 
+Pagination in SQL | http://allyouneedisbackend.com/blog/2017/09/24/the-sql-i-love-part-1-scanning-large-table | pagination, sql 
 
 Tags | URLs
 --- | ---
