@@ -3,6 +3,7 @@ from __future__ import print_function
 import os.path
 import pickle
 
+import click
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
@@ -58,14 +59,13 @@ class Resources:
 
     def setup(self):
         if os.path.exists(const.TOKEN_PICKLE_FILE_LOCATION):
-            self.logger.error("You have already performed the setup before. You can reset and setup again.")
             return
         self.logger.info("Please visit: %s and click on %s, download the JSON file and place it in %s" %
                          (const.CREDENTIALS_JSON_DOWNLOAD_PATH, 'ENABLE THE GOOGLE DOCS API',
                           '~/resources/credentials/credentials.json'))
 
+    def add(self, title, url, tags):
 
-if __name__ == '__main__':
-    resources = Resources()
-    resources.setup()
-    # print(resources.create_empty_table())
+
+
+
